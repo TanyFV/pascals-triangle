@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.hexlet</groupId>
+    <artifactId>JavaCompoundData</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <parent>
+        <groupId>io.hexlet</groupId>
+        <artifactId>base</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../../../maven/pom.xml</relativePath>
+    </parent>
+
+    <properties>
+        <for-java-pairs.version>14</for-java-pairs.version>
+    </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>com.github.ShafigullinIK</groupId>
+            <artifactId>for-java-pairs</artifactId>
+            <version>${for-java-pairs.version}</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <sourceDirectory>${basedir}/main</sourceDirectory>
+        <testSourceDirectory>${basedir}/tests</testSourceDirectory>
+        <outputDirectory>${basedir}/target/classes</outputDirectory>
+        <testOutputDirectory>${basedir}/target/test-classes</testOutputDirectory>
+    </build>
+
+</project>
